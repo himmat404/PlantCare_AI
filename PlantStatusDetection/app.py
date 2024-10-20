@@ -64,22 +64,27 @@ def identify_plant(image):
 
 @app.route('/identify', methods=['POST'])
 def identify():
-    if 'file' in request.files:
-        file = request.files['file']
-        if file.filename == '':
-            return jsonify({"error": "No selected file"}), 400
-        if file:
-            image = Image.open(file.stream)
-    elif 'url' in request.form:
-        url = request.form['url']
-        response = requests.get(url)
-        image = Image.open(BytesIO(response.content))
-    else:
-        return jsonify({"error": "No file uploaded or URL provided"}), 400
+    try:
+        if 'file' in request.files:
+            file = request.files['file']
+            if file.filename == '':
+                return jsonify({"error": "No selected file"}), 400
+            if file:
+                image = Image.open(file.stream)
+        elif 'url' in request.form:
+            url = request.form['url']
+            response = requests.get(url)
+            if response.status_code != 200:
+                return jsonify({"error": f"Failed to fetch image from URL. Status code: {response.status_code}"}), 400
+            image = Image.open(BytesIO(response.content))
+        else:
+            return jsonify({"error": "No file uploaded or URL provided"}), 400
 
-    processed_image = preprocess_image(image)
-    result = identify_plant(processed_image)
-    return jsonify(result)
+        processed_image = preprocess_image(image)
+        result = identify_plant(processed_image)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
