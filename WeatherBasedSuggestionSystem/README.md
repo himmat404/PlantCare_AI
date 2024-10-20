@@ -9,6 +9,10 @@ This API predicts the top 5 most suitable plants to grow based on location data,
 - Uses machine learning to predict suitable plants
 - Provides recommendations for the next 15 days
 
+## Live API
+
+The API is live and accessible at: https://plantcare-ai.onrender.com
+
 ## Prerequisites
 
 - Python 3.7+
@@ -18,8 +22,8 @@ This API predicts the top 5 most suitable plants to grow based on location data,
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/plant-prediction-api.git
-   cd plant-prediction-api
+   https://github.com/himmat404/PlantCare_AI.git
+   cd PlantCare_AI
    ```
 
 2. Install the required packages:
@@ -28,19 +32,19 @@ This API predicts the top 5 most suitable plants to grow based on location data,
    ```
 
 3. Ensure you have the following files in your project directory:
-   - `plant_prediction_api.py` (main API file)
+   - `app.py` (main API file)
    - `plants_data.csv` (dataset of plant information)
 
 ## Usage
 
-1. Start the API server:
+1. If running locally, start the API server:
    ```
-   python plant_prediction_api.py
+   python app.py
    ```
 
-2. The server will start running on `http://0.0.0.0:10000`
+2. The server will start running on `http://0.0.0.0:10000` when run locally, or on the Render-provided URL when deployed.
 
-3. To make a prediction, send a POST request to the `/predict_plants` endpoint with the following JSON payload:
+3. To make a prediction, send a POST request to the `/predict` endpoint with the following JSON payload:
 
    ```json
    {
@@ -52,52 +56,21 @@ This API predicts the top 5 most suitable plants to grow based on location data,
 
    You can use tools like cURL, Postman, or any programming language to make the request.
 
-4. The API will respond with a JSON object containing the predictions:
+4. The API will respond with a JSON array containing the top 5 recommended plants:
 
    ```json
-   {
-     "location": {
-       "latitude": 40.7128,
-       "longitude": -74.006,
-       "elevation": 10
-     },
-     "soil_info": {
-       "type": "Loamy",
-       "ph": 6.5
-     },
-     "recommendations": [
-       {
-         "rank": 1,
-         "plant": "Tomato",
-         "frequency": 12
-       },
-       {
-         "rank": 2,
-         "plant": "Pepper",
-         "frequency": 10
-       },
-       {
-         "rank": 3,
-         "plant": "Cucumber",
-         "frequency": 8
-       },
-       {
-         "rank": 4,
-         "plant": "Lettuce",
-         "frequency": 7
-       },
-       {
-         "rank": 5,
-         "plant": "Spinach",
-         "frequency": 6
-       }
-     ]
-   }
+   [
+     "Tomato",
+     "Pepper",
+     "Cucumber",
+     "Lettuce",
+     "Spinach"
+   ]
    ```
 
 ## Deployment
 
-This API is designed to be easily deployed on Render. To deploy:
+This API is deployed on Render. To deploy your own instance:
 
 1. Push your code to a GitHub repository.
 2. Create a new Web Service on Render.
@@ -105,13 +78,17 @@ This API is designed to be easily deployed on Render. To deploy:
 4. Use the following settings:
    - Environment: Python
    - Build Command: `pip install -r requirements.txt`
-   - Start Command: `python plant_prediction_api.py`
+   - Start Command: `gunicorn app:app`
 5. Add any necessary environment variables.
 6. Deploy the service.
 
 ## API Endpoints
 
-### POST /predict_plants
+### GET /
+
+Returns a welcome message and basic instructions.
+
+### POST /predict
 
 Predicts the top 5 most suitable plants based on location data.
 
@@ -125,16 +102,7 @@ Predicts the top 5 most suitable plants based on location data.
 
 #### Response
 
-| Field            | Type   | Description                               |
-|------------------|--------|-------------------------------------------|
-| location         | object | Contains input location data              |
-| soil_info        | object | Contains soil type and pH                 |
-| recommendations  | array  | List of top 5 recommended plants          |
-
-Each recommendation in the array contains:
-- rank: Position in the recommendation list
-- plant: Name of the recommended plant
-- frequency: How often this plant was recommended over the 15-day forecast
+An array of strings representing the top 5 recommended plants.
 
 ## Error Handling
 
