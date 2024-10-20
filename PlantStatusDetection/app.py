@@ -5,6 +5,7 @@ from PIL import Image
 from flask import Flask, request, jsonify
 import requests
 from io import BytesIO
+import re
 
 app = Flask(__name__)
 
@@ -54,12 +55,20 @@ def identify_plant(image):
 
         response = model.generate_content([prompt, image])
         
-        # Strip markdown code block markers if present
-        json_string = response.text.strip('`').replace('```json\n', '').replace('\n```', '')
-        
-        # Parse the JSON string
-        result = json.loads(json_string)
-        return result
+        # Extract JSON portion using regex
+        json_match = re.search(r'```json\n(.*?)```', response.text, re.DOTALL)
+        if json_match:
+            json_string = json_match.group(1)
+            result = json.loads(json_string)
+            
+            # Extract explanation if present
+            explanation_match = re.search(r'```\n\n(.+)$', response.text, re.DOTALL)
+            if explanation_match:
+                result['NPK_Explanation'] = explanation_match.group(1).strip()
+            
+            return result
+        else:
+            return {"error": "No JSON found in response", "raw_response": response.text}
 
     except json.JSONDecodeError as e:
         return {"error": f"Failed to parse JSON response: {str(e)}", "raw_response": response.text}
