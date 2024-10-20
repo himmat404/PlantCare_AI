@@ -1,0 +1,1 @@
+### Plant-AI is a comprehensive machine learning-based system designed to suggest optimal plants based on environmental factors, detect plant diseases, and analyze weather conditions. This project is divided into three main modules: Plant Prediction, Disease Identification. Each module contains its own models, APIs, and data processing pipelines.
