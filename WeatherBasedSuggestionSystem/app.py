@@ -1,3 +1,4 @@
+from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -196,7 +197,15 @@ def determine_season(date):
     else:
         return 'Winter'
 
-def main(latitude, longitude, elevation):
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.json
+    latitude = float(data['latitude'])
+    longitude = float(data['longitude'])
+    elevation = float(data['elevation'])
+    
     location = (latitude, longitude, elevation)
     end_date = datetime.now()
     plants_data_file = 'plants_data.csv'
@@ -230,12 +239,7 @@ def main(latitude, longitude, elevation):
     plant_counts = Counter(all_recommendations)
     top_5_plants = plant_counts.most_common(5)
 
-    print("\nTop 5 recommended plants to grow:")
-    for i, (plant, _) in enumerate(top_5_plants, 1):
-        print(f"{i}. {plant}")
+    return jsonify([plant for plant, _ in top_5_plants])
 
-if __name__ == "__main__":
-    latitude = float(input("Enter latitude: "))
-    longitude = float(input("Enter longitude: "))
-    elevation = float(input("Enter elevation (in meters): "))
-    main(latitude, longitude, elevation)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
