@@ -73,9 +73,15 @@ def identify():
                 image = Image.open(file.stream)
         elif 'url' in request.form:
             url = request.form['url']
-            response = requests.get(url)
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            response = requests.get(url, headers=headers)
             if response.status_code != 200:
-                return jsonify({"error": f"Failed to fetch image from URL. Status code: {response.status_code}"}), 400
+                return jsonify({
+                    "error": f"Failed to fetch image from URL. Status code: {response.status_code}",
+                    "message": "Please try uploading the image directly or use a different image URL."
+                }), 400
             image = Image.open(BytesIO(response.content))
         else:
             return jsonify({"error": "No file uploaded or URL provided"}), 400
