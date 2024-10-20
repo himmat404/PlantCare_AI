@@ -199,6 +199,10 @@ def determine_season(date):
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Welcome to the Plant Prediction API. Use the /predict endpoint to get plant recommendations."
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
@@ -242,4 +246,5 @@ def predict():
     return jsonify([plant for plant, _ in top_5_plants])
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port)
