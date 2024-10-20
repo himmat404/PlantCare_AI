@@ -3,7 +3,6 @@ import google.generativeai as genai
 import json
 from PIL import Image
 from flask import Flask, request, jsonify
-from werkzeug.utils import secure_filename
 import requests
 from io import BytesIO
 
@@ -54,11 +53,16 @@ def identify_plant(image):
         """
 
         response = model.generate_content([prompt, image])
-        result = json.loads(response.text)
+        
+        # Strip markdown code block markers if present
+        json_string = response.text.strip('`').replace('```json\n', '').replace('\n```', '')
+        
+        # Parse the JSON string
+        result = json.loads(json_string)
         return result
 
-    except json.JSONDecodeError:
-        return {"error": "Failed to parse JSON response", "raw_response": response.text}
+    except json.JSONDecodeError as e:
+        return {"error": f"Failed to parse JSON response: {str(e)}", "raw_response": response.text}
     except Exception as e:
         return {"error": f"An error occurred: {str(e)}"}
 
