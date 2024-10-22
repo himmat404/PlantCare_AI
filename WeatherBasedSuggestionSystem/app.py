@@ -41,7 +41,7 @@ def fetch_weather_data(location, end_date):
     weather_data = weather_data.fetch()
 
     weather_df = weather_data[['tavg', 'prcp', 'wspd']].reset_index()
-    weather_df.rename(columns={'tavg': 'temperature', 'prcp': 'precipitation', 'wspd': 'wind_speed'}, inplace=True)
+    weather_df.rename(columns={'time': 'time', 'tavg': 'temperature', 'prcp': 'precipitation', 'wspd': 'wind_speed'}, inplace=True)
 
     weather_df['temperature'] = weather_df['temperature'].fillna(weather_df['temperature'].mean())
     weather_df['precipitation'] = weather_df['precipitation'].fillna(0)
