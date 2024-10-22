@@ -1,58 +1,58 @@
 Plant Name , Min Temp (°C) , Max Temp (°C) , Min Rainfall (mm/month) , Max Rainfall (mm/month) , Preferred Soil pH , Soil Type , Sunlight Requirement , Growing Season , Days to Harvest , Difficulty Level 
 Solanum lycopersicum , 15.0 , 30.0 , 40.0 , 80.0 , 6.5 , Loamy , Full Sun , Spring-Summer , 60.0 , Easy 
 Daucus carota , 10.0 , 25.0 , 30.0 , 50.0 , 6.3 , Sandy, Loamy , Full Sun/Partial Shade , Spring-Fall , 70.0 , Easy 
- Lactuca sativa , 5.0 , 20.0 , 30.0 , 60.0 , 6.8 , Loamy , Partial Shade , Spring-Fall , 45.0 , Easy 
- Capsicum annuum , 18.0 , 32.0 , 40.0 , 70.0 , 6.5 , Loamy , Full Sun , Spring-Summer , 60.0 , Moderate 
- Cucumis sativus , 18.0 , 30.0 , 50.0 , 80.0 , 6.7 , Loamy , Full Sun , Summer , 50.0 , Easy 
- Spinacia oleracea , 5.0 , 20.0 , 35.0 , 60.0 , 6.2 , Loamy, Sandy , Full Sun/Partial Shade , Spring-Fall , 40.0 , Easy 
- Solanum tuberosum , 12.0 , 22.0 , 40.0 , 70.0 , 5.5 , Loamy , Full Sun , Spring-Summer , 80.0 , Moderate 
- Zea mays , 16.0 , 35.0 , 60.0 , 120.0 , 6.0 , Loamy , Full Sun , Summer , 90.0 , Easy 
- Allium cepa , 12.0 , 25.0 , 30.0 , 60.0 , 6.2 , Loamy , Full Sun , Spring-Summer , 100.0 , Moderate 
- Brassica oleracea var. italica , 10.0 , 24.0 , 40.0 , 80.0 , 6.0 , Loamy , Full Sun , Fall-Winter , 70.0 , Moderate 
- Solanum melongena , 20.0 , 32.0 , 40.0 , 65.0 , 6.3 , Loamy , Full Sun , Summer , 70.0 , Moderate 
- Cucurbita pepo , 18.0 , 35.0 , 40.0 , 90.0 , 6.5 , Loamy , Full Sun , Summer , 50.0 , Easy 
- Pisum sativum , 10.0 , 22.0 , 35.0 , 100.0 , 6.0 , Loamy, Clay , Full Sun , Spring-Fall , 60.0 , Easy 
- Raphanus sativus , 5.0 , 25.0 , 25.0 , 40.0 , 6.0 , Sandy , Full Sun , Spring-Fall , 30.0 , Easy 
- Brassica oleracea var. botrytis , 15.0 , 22.0 , 30.0 , 60.0 , 6.5 , Loamy , Full Sun , Fall-Winter , 65.0 , Moderate 
- Brassica oleracea var. capitata , 10.0 , 22.0 , 40.0 , 75.0 , 6.5 , Loamy, Clay , Full Sun , Spring-Fall , 70.0 , Moderate 
- Brassica oleracea var. sabellica , 7.0 , 23.0 , 25.0 , 50.0 , 6.5 , Loamy , Full Sun/Partial Shade , Spring-Fall , 60.0 , Easy 
- Beta vulgaris , 10.0 , 25.0 , 35.0 , 60.0 , 6.0 , Sandy, Loamy , Full Sun , Spring-Fall , 55.0 , Easy 
- Allium sativum , 0.0 , 20.0 , 30.0 , 50.0 , 6.2 , Loamy , Full Sun , Fall-Spring , 240.0 , Easy 
- Asparagus officinalis , 10.0 , 25.0 , 40.0 , 60.0 , 6.5 , Sandy, Loamy , Full Sun , Spring , 730.0 , Difficult 
- Fragaria × ananassa , 15.0 , 26.0 , 25.0 , 50.0 , 6.0 , Sandy, Loamy , Full Sun , Spring-Summer , 60.0 , Moderate 
- Vaccinium corymbosum , 15.0 , 30.0 , 50.0 , 80.0 , 4.5 , Sandy , Full Sun , Spring-Summer , 730.0 , Moderate 
- Rubus idaeus , 15.0 , 25.0 , 40.0 , 70.0 , 6.0 , Loamy , Full Sun , Spring-Summer , 300.0 , Moderate 
- Citrullus lanatus , 22.0 , 30.0 , 40.0 , 50.0 , 6.0 , Sandy , Full Sun , Summer , 80.0 , Moderate 
- Beta vulgaris subsp. vulgaris , 10.0 , 25.0 , 30.0 , 60.0 , 6.0 , Loamy , Full Sun/Partial Shade , Spring-Fall , 50.0 , Easy 
- Brassica rapa subsp. rapa , 10.0 , 22.0 , 30.0 , 50.0 , 6.0 , Sandy, Loamy , Full Sun , Spring-Fall , 60.0 , Easy 
- Abelmoschus esculentus , 20.0 , 35.0 , 50.0 , 80.0 , 6.5 , Loamy , Full Sun , Summer , 60.0 , Easy 
- Cynara cardunculus var. scolymus , 10.0 , 20.0 , 40.0 , 65.0 , 6.5 , Loamy , Full Sun , Spring-Fall , 150.0 , Difficult 
- Brassica oleracea var. gemmifera , 7.0 , 24.0 , 30.0 , 50.0 , 6.5 , Loamy , Full Sun , Fall-Winter , 90.0 , Moderate 
- Mangifera indica , 24.0 , 30.0 , 50.0 , 250.0 , 5.5 , Loamy, Sandy , Full Sun , Summer, Monsoon , 120.0 , Moderate 
- Musa spp. , 20.0 , 35.0 , 100.0 , 300.0 , 5.5 , Well-Drained , Full Sun , All Year , 300.0 , Easy 
- Carica papaya , 22.0 , 32.0 , 100.0 , 200.0 , 5.5 , Loamy, Sandy , Full Sun , Summer , 120.0 , Easy 
- Psidium guajava , 15.0 , 35.0 , 80.0 , 200.0 , 5.0 , Sandy, Loamy , Full Sun , Year-Round , 150.0 , Easy 
- Punica granatum , 20.0 , 35.0 , 100.0 , 200.0 , 5.5 , Loam, Sandy , Full Sun , Winter, Monsoon , 150.0 , Moderate 
- Ananas comosus , 20.0 , 30.0 , 150.0 , 300.0 , 4.5 , Well-Drained , Partial Shade , Monsoon, Summer , 365.0 , Difficult 
- Malus domestica , 10.0 , 25.0 , 70.0 , 150.0 , 6.0 , Loamy, Sandy , Full Sun , Winter , 150.0 , Moderate 
- Vitis vinifera , 15.0 , 35.0 , 50.0 , 250.0 , 6.0 , Well-Drained , Full Sun , Year-Round , 90.0 , Moderate 
- Citrus × sinensis , 10.0 , 30.0 , 100.0 , 200.0 , 5.5 , Sandy, Loam , Full Sun , Winter, Monsoon , 180.0 , Moderate 
- Citrus × limon , 15.0 , 30.0 , 100.0 , 250.0 , 5.5 , Loam, Sandy , Full Sun , Year-Round , 180.0 , Easy 
- Oryza sativa , 20.0 , 30.0 , 1000.0 , 3000.0 , 5.0 , Clayey, Waterlogged , Full sun , Kharif, Rabi , 120.0 , High 
- Helianthus annuus , 18.0 , 30.0 , 75.0 , 150.0 , 6.0 , Sandy loam , Full Sun , Kharif, Rabi , 70.0 , Easy 
- Gossypium hirsutum , 21.0 , 40.0 , 150.0 , 250.0 , 6.0 , Alluvial, Black , Full Sun , Kharif , 160.0 , Hard 
- Arachis hypogaea , 20.0 , 35.0 , 50.0 , 150.0 , 6.0 , Sandy loam , Full Sun , Kharif, Summer , 110.0 , Medium 
- Pennisetum glaucum , 25.0 , 35.0 , 50.0 , 120.0 , 5.5 , Sandy loam , Full Sun , Kharif , 70.0 , Medium 
- Sorghum bicolor , 15.0 , 35.0 , 50.0 , 100.0 , 6.0 , Loamy soil , Full Sun , Kharif, Rabi , 90.0 , Medium 
- Hordeum vulgare , 10.0 , 25.0 , 30.0 , 100.0 , 6.5 , Well-drained clayey , Full Sun , Rabi , 150.0 , Medium 
- Cicer arietinum , 15.0 , 30.0 , 20.0 , 60.0 , 6.0 , Clay loam , Full Sun , Rabi , 120.0 , Easy 
- Camellia sinensis , 10.0 , 30.0 , 200.0 , 300.0 , 4.5 , Acidic, Loamy , Partial Shade , Year-round , 365.0 , Hard 
- Coffea arabica , 15.0 , 28.0 , 150.0 , 300.0 , 6.0 , Well-drained loamy , Partial Shade , Year-round , 365.0 , Hard 
- Brassica juncea , 10.0 , 25.0 , 30.0 , 80.0 , 6.0 , Sandy loam , Full Sun , Rabi , 90.0 , Medium 
- Lens culinaris , 10.0 , 30.0 , 50.0 , 100.0 , 6.0 , Clay loam , Full Sun , Rabi , 110.0 , Medium 
- Saccharum officinarum , 21.0 , 40.0 , 100.0 , 300.0 , 6.5 , Alluvial, Black , Full Sun , Year-round , 300.0 , Hard 
- Hevea brasiliensis , 20.0 , 34.0 , 150.0 , 250.0 , 4.5 , Laterite , Partial Shade , Year-round , 365.0 , Hard 
- Corchorus capsularis , 25.0 , 37.0 , 150.0 , 200.0 , 6.0 , Alluvial , Full Sun , Kharif , 120.0 , Medium 
- Trigonella foenum-graecum , 10.0 , 25.0 , 400.0 , 600.0 , 6.0 , Sandy loam , Partial to full sunlight , Winter and early spring , 25.0 , Easy 
- Mentha spp. , 15.0 , 30.0 , 300.0 , 600.0 , 6.0 , Moist, rich soil , Partial to full sun , Spring to autumn , 30.0 , Easy 
- Coriandrum sativum , 15.0 , 30.0 , 300.0 , 500.0 , 6.2 , Well-drained, sandy loam , Partial sun , Winter and spring , 30.0 , Easy 
+Lactuca sativa , 5.0 , 20.0 , 30.0 , 60.0 , 6.8 , Loamy , Partial Shade , Spring-Fall , 45.0 , Easy 
+Capsicum annuum , 18.0 , 32.0 , 40.0 , 70.0 , 6.5 , Loamy , Full Sun , Spring-Summer , 60.0 , Moderate 
+Cucumis sativus , 18.0 , 30.0 , 50.0 , 80.0 , 6.7 , Loamy , Full Sun , Summer , 50.0 , Easy 
+Spinacia oleracea , 5.0 , 20.0 , 35.0 , 60.0 , 6.2 , Loamy, Sandy , Full Sun/Partial Shade , Spring-Fall , 40.0 , Easy 
+Solanum tuberosum , 12.0 , 22.0 , 40.0 , 70.0 , 5.5 , Loamy , Full Sun , Spring-Summer , 80.0 , Moderate 
+Zea mays , 16.0 , 35.0 , 60.0 , 120.0 , 6.0 , Loamy , Full Sun , Summer , 90.0 , Easy 
+Allium cepa , 12.0 , 25.0 , 30.0 , 60.0 , 6.2 , Loamy , Full Sun , Spring-Summer , 100.0 , Moderate 
+Brassica oleracea var. italica , 10.0 , 24.0 , 40.0 , 80.0 , 6.0 , Loamy , Full Sun , Fall-Winter , 70.0 , Moderate 
+Solanum melongena , 20.0 , 32.0 , 40.0 , 65.0 , 6.3 , Loamy , Full Sun , Summer , 70.0 , Moderate 
+Cucurbita pepo , 18.0 , 35.0 , 40.0 , 90.0 , 6.5 , Loamy , Full Sun , Summer , 50.0 , Easy 
+Pisum sativum , 10.0 , 22.0 , 35.0 , 100.0 , 6.0 , Loamy, Clay , Full Sun , Spring-Fall , 60.0 , Easy 
+Raphanus sativus , 5.0 , 25.0 , 25.0 , 40.0 , 6.0 , Sandy , Full Sun , Spring-Fall , 30.0 , Easy 
+Brassica oleracea var. botrytis , 15.0 , 22.0 , 30.0 , 60.0 , 6.5 , Loamy , Full Sun , Fall-Winter , 65.0 , Moderate 
+Brassica oleracea var. capitata , 10.0 , 22.0 , 40.0 , 75.0 , 6.5 , Loamy, Clay , Full Sun , Spring-Fall , 70.0 , Moderate 
+Brassica oleracea var. sabellica , 7.0 , 23.0 , 25.0 , 50.0 , 6.5 , Loamy , Full Sun/Partial Shade , Spring-Fall , 60.0 , Easy 
+Beta vulgaris , 10.0 , 25.0 , 35.0 , 60.0 , 6.0 , Sandy, Loamy , Full Sun , Spring-Fall , 55.0 , Easy 
+Allium sativum , 0.0 , 20.0 , 30.0 , 50.0 , 6.2 , Loamy , Full Sun , Fall-Spring , 240.0 , Easy 
+Asparagus officinalis , 10.0 , 25.0 , 40.0 , 60.0 , 6.5 , Sandy, Loamy , Full Sun , Spring , 730.0 , Difficult 
+Fragaria × ananassa , 15.0 , 26.0 , 25.0 , 50.0 , 6.0 , Sandy, Loamy , Full Sun , Spring-Summer , 60.0 , Moderate 
+Vaccinium corymbosum , 15.0 , 30.0 , 50.0 , 80.0 , 4.5 , Sandy , Full Sun , Spring-Summer , 730.0 , Moderate 
+Rubus idaeus , 15.0 , 25.0 , 40.0 , 70.0 , 6.0 , Loamy , Full Sun , Spring-Summer , 300.0 , Moderate 
+Citrullus lanatus , 22.0 , 30.0 , 40.0 , 50.0 , 6.0 , Sandy , Full Sun , Summer , 80.0 , Moderate 
+Beta vulgaris subsp. vulgaris , 10.0 , 25.0 , 30.0 , 60.0 , 6.0 , Loamy , Full Sun/Partial Shade , Spring-Fall , 50.0 , Easy 
+Brassica rapa subsp. rapa , 10.0 , 22.0 , 30.0 , 50.0 , 6.0 , Sandy, Loamy , Full Sun , Spring-Fall , 60.0 , Easy 
+Abelmoschus esculentus , 20.0 , 35.0 , 50.0 , 80.0 , 6.5 , Loamy , Full Sun , Summer , 60.0 , Easy 
+Cynara cardunculus var. scolymus , 10.0 , 20.0 , 40.0 , 65.0 , 6.5 , Loamy , Full Sun , Spring-Fall , 150.0 , Difficult 
+Brassica oleracea var. gemmifera , 7.0 , 24.0 , 30.0 , 50.0 , 6.5 , Loamy , Full Sun , Fall-Winter , 90.0 , Moderate 
+Mangifera indica , 24.0 , 30.0 , 50.0 , 250.0 , 5.5 , Loamy, Sandy , Full Sun , Summer, Monsoon , 120.0 , Moderate 
+Musa spp. , 20.0 , 35.0 , 100.0 , 300.0 , 5.5 , Well-Drained , Full Sun , All Year , 300.0 , Easy 
+Carica papaya , 22.0 , 32.0 , 100.0 , 200.0 , 5.5 , Loamy, Sandy , Full Sun , Summer , 120.0 , Easy 
+Psidium guajava , 15.0 , 35.0 , 80.0 , 200.0 , 5.0 , Sandy, Loamy , Full Sun , Year-Round , 150.0 , Easy 
+Punica granatum , 20.0 , 35.0 , 100.0 , 200.0 , 5.5 , Loam, Sandy , Full Sun , Winter, Monsoon , 150.0 , Moderate 
+Ananas comosus , 20.0 , 30.0 , 150.0 , 300.0 , 4.5 , Well-Drained , Partial Shade , Monsoon, Summer , 365.0 , Difficult 
+Malus domestica , 10.0 , 25.0 , 70.0 , 150.0 , 6.0 , Loamy, Sandy , Full Sun , Winter , 150.0 , Moderate 
+Vitis vinifera , 15.0 , 35.0 , 50.0 , 250.0 , 6.0 , Well-Drained , Full Sun , Year-Round , 90.0 , Moderate 
+Citrus × sinensis , 10.0 , 30.0 , 100.0 , 200.0 , 5.5 , Sandy, Loam , Full Sun , Winter, Monsoon , 180.0 , Moderate 
+Citrus × limon , 15.0 , 30.0 , 100.0 , 250.0 , 5.5 , Loam, Sandy , Full Sun , Year-Round , 180.0 , Easy 
+Oryza sativa , 20.0 , 30.0 , 1000.0 , 3000.0 , 5.0 , Clayey, Waterlogged , Full sun , Kharif, Rabi , 120.0 , High 
+Helianthus annuus , 18.0 , 30.0 , 75.0 , 150.0 , 6.0 , Sandy loam , Full Sun , Kharif, Rabi , 70.0 , Easy 
+Gossypium hirsutum , 21.0 , 40.0 , 150.0 , 250.0 , 6.0 , Alluvial, Black , Full Sun , Kharif , 160.0 , Hard 
+Arachis hypogaea , 20.0 , 35.0 , 50.0 , 150.0 , 6.0 , Sandy loam , Full Sun , Kharif, Summer , 110.0 , Medium 
+Pennisetum glaucum , 25.0 , 35.0 , 50.0 , 120.0 , 5.5 , Sandy loam , Full Sun , Kharif , 70.0 , Medium 
+Sorghum bicolor , 15.0 , 35.0 , 50.0 , 100.0 , 6.0 , Loamy soil , Full Sun , Kharif, Rabi , 90.0 , Medium 
+Hordeum vulgare , 10.0 , 25.0 , 30.0 , 100.0 , 6.5 , Well-drained clayey , Full Sun , Rabi , 150.0 , Medium 
+Cicer arietinum , 15.0 , 30.0 , 20.0 , 60.0 , 6.0 , Clay loam , Full Sun , Rabi , 120.0 , Easy 
+Camellia sinensis , 10.0 , 30.0 , 200.0 , 300.0 , 4.5 , Acidic, Loamy , Partial Shade , Year-round , 365.0 , Hard 
+Coffea arabica , 15.0 , 28.0 , 150.0 , 300.0 , 6.0 , Well-drained loamy , Partial Shade , Year-round , 365.0 , Hard 
+Brassica juncea , 10.0 , 25.0 , 30.0 , 80.0 , 6.0 , Sandy loam , Full Sun , Rabi , 90.0 , Medium 
+Lens culinaris , 10.0 , 30.0 , 50.0 , 100.0 , 6.0 , Clay loam , Full Sun , Rabi , 110.0 , Medium 
+Saccharum officinarum , 21.0 , 40.0 , 100.0 , 300.0 , 6.5 , Alluvial, Black , Full Sun , Year-round , 300.0 , Hard 
+Hevea brasiliensis , 20.0 , 34.0 , 150.0 , 250.0 , 4.5 , Laterite , Partial Shade , Year-round , 365.0 , Hard 
+Corchorus capsularis , 25.0 , 37.0 , 150.0 , 200.0 , 6.0 , Alluvial , Full Sun , Kharif , 120.0 , Medium 
+Trigonella foenum-graecum , 10.0 , 25.0 , 400.0 , 600.0 , 6.0 , Sandy loam , Partial to full sunlight , Winter and early spring , 25.0 , Easy 
+Mentha spp. , 15.0 , 30.0 , 300.0 , 600.0 , 6.0 , Moist, rich soil , Partial to full sun , Spring to autumn , 30.0 , Easy 
+Coriandrum sativum , 15.0 , 30.0 , 300.0 , 500.0 , 6.2 , Well-drained, sandy loam , Partial sun , Winter and spring , 30.0 , Easy 

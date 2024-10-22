@@ -1,0 +1,31 @@
+Plant Name,Min Temp (°C),Max Temp (°C),Min Rainfall (mm/month),Max Rainfall (mm/month),Preferred Soil pH,Soil Type,Sunlight Requirement,Growing Season,Days to Harvest,Difficulty Level
+Tomato,15.0,30.0,40.0,80.0,6.5,Loamy,Full Sun,Spring-Summer,60,Easy
+Carrot,10.0,25.0,30.0,50.0,6.3,"Sandy, Loamy",Full Sun/Partial Shade,Spring-Fall,70,Easy
+Lettuce,5.0,20.0,30.0,60.0,6.8,Loamy,Partial Shade,Spring-Fall,45,Easy
+Pepper,18.0,32.0,40.0,70.0,6.5,Loamy,Full Sun,Spring-Summer,60,Moderate
+Cucumber,18.0,30.0,50.0,80.0,6.7,Loamy,Full Sun,Summer,50,Easy
+Spinach,5.0,20.0,35.0,60.0,6.2,"Loamy, Sandy",Full Sun/Partial Shade,Spring-Fall,40,Easy
+Potato,12.0,22.0,40.0,70.0,5.5,Loamy,Full Sun,Spring-Summer,80,Moderate
+Corn,16.0,35.0,60.0,120.0,6.0,Loamy,Full Sun,Summer,90,Easy
+Onion,12.0,25.0,30.0,60.0,6.2,Loamy,Full Sun,Spring-Summer,100,Moderate
+Broccoli,10.0,24.0,40.0,80.0,6.0,Loamy,Full Sun,Fall-Winter,70,Moderate
+Eggplant,20.0,32.0,40.0,65.0,6.3,Loamy,Full Sun,Summer,70,Moderate
+Zucchini,18.0,35.0,40.0,90.0,6.5,Loamy,Full Sun,Summer,50,Easy
+Peas,10.0,22.0,35.0,100.0,6.0,"Loamy, Clay",Full Sun,Spring-Fall,60,Easy
+Radish,5.0,25.0,25.0,40.0,6.0,Sandy,Full Sun,Spring-Fall,30,Easy
+Cauliflower,15.0,22.0,30.0,60.0,6.5,Loamy,Full Sun,Fall-Winter,65,Moderate
+Cabbage,10.0,22.0,40.0,75.0,6.5,"Loamy, Clay",Full Sun,Spring-Fall,70,Moderate
+Kale,7.0,23.0,25.0,50.0,6.5,Loamy,Full Sun/Partial Shade,Spring-Fall,60,Easy
+Beets,10.0,25.0,35.0,60.0,6.0,"Sandy, Loamy",Full Sun,Spring-Fall,55,Easy
+Garlic,0.0,20.0,30.0,50.0,6.2,Loamy,Full Sun,Fall-Spring,240,Easy
+Asparagus,10.0,25.0,40.0,60.0,6.5,"Sandy, Loamy",Full Sun,Spring,730,Difficult
+Strawberry,15.0,26.0,25.0,50.0,6.0,"Sandy, Loamy",Full Sun,Spring-Summer,60,Moderate
+Blueberry,15.0,30.0,50.0,80.0,4.5,Sandy,Full Sun,Spring-Summer,730,Moderate
+Raspberry,15.0,25.0,40.0,70.0,6.0,Loamy,Full Sun,Spring-Summer,300,Moderate
+Watermelon,22.0,30.0,40.0,50.0,6.0,Sandy,Full Sun,Summer,80,Moderate
+Pumpkin,18.0,30.0,25.0,50.0,6.0,Loamy,Full Sun,Summer,100,Moderate
+Swiss Chard,10.0,25.0,30.0,60.0,6.0,Loamy,Full Sun/Partial Shade,Spring-Fall,50,Easy
+Turnip,10.0,22.0,30.0,50.0,6.0,"Sandy, Loamy",Full Sun,Spring-Fall,60,Easy
+Okra,20.0,35.0,50.0,80.0,6.5,Loamy,Full Sun,Summer,60,Easy
+Artichoke,10.0,20.0,40.0,65.0,6.5,Loamy,Full Sun,Spring-Fall,150,Difficult
+Brussels Sprouts,7.0,24.0,30.0,50.0,6.5,Loamy,Full Sun,Fall-Winter,90,Moderate
