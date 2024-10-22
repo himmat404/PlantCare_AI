@@ -13,6 +13,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 from meteostat import Point, Daily
 from collections import Counter
 import requests
+import tempfile
 
 def fetch_soil_data(latitude, longitude):
     url = f"https://rest.isric.org/soilgrids/v2.0/properties/query?lat={latitude}&lon={longitude}"
@@ -129,10 +130,17 @@ def train_plant_model(data_file):
 
     model.fit(X_train, y_train)
 
-    joblib.dump(model, 'plant_prediction_model.joblib')
-    joblib.dump(le, 'label_encoder.joblib')
+    # Use temporary files for model and label encoder
+    with tempfile.NamedTemporaryFile(delete=False) as temp_model_file, \
+         tempfile.NamedTemporaryFile(delete=False) as temp_le_file:
+        joblib.dump(model, temp_model_file.name)
+        joblib.dump(le, temp_le_file.name)
+    
+        temp_model_file.flush()  # Ensure file is written to disk
+        temp_le_file.flush()
 
-    return model, le
+        return model, le
+
 
 def perform_time_series_analysis(historical_data):
     historical_data['time'] = pd.to_datetime(historical_data['time'])
